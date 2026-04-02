@@ -269,67 +269,38 @@ body {
 .urgencia-mid .sub-line strong { color:#FF6B00; }
 .urgencia-mid .arrows { font-size:18px; margin-top:10px; color:#FF6B00; letter-spacing:6px; }
 
+/* ========== PLANO PREMIUM — FUNDO ESCURO ========== */
 .plan-premium {
-  background:#fff;
-  border-radius:18px; padding:28px 20px 22px;
+  background: linear-gradient(165deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%);
+  border-radius:18px; padding:15px 20px 22px;
   border:2.5px solid #FF6B00;
   text-align:center; position:relative;
-  box-shadow:0 8px 32px rgba(255,107,0,0.18);
+  box-shadow:0 8px 32px rgba(255,107,0,0.25), 0 0 60px rgba(255,107,0,0.08);
   margin-bottom:10px;
-}
-.plan-img {
-  margin: 6px auto 6px;
-  text-align: center;
-}
-.plan-price-box {
-  margin-top: 4px;
-  margin-bottom: 12px;
-}
-
-.plan-old {
-  font-size: 13px;
-  color: #bbb;
-  text-decoration: line-through;
-  margin-bottom: 2px;
-}
-
-.plan-premium {
- padding: 15px 20px 20px;
-}
-
-.plan-img {
-  margin: 10px auto 0;
-}
-
-.plan-img img {
-  width: 100%;
-  max-width: 260px;
-  transform: scale(1.08);
-}
-.pp-badge {
-  position:absolute; top:-14px; left:50%; transform:translateX(-50%);
-  background:linear-gradient(135deg,#FF6B00,#e05500); color:#fff;
-  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:900;
-  padding:5px 20px; border-radius:50px; white-space:nowrap; letter-spacing:0.3px;
 }
 .plan-premium h2 {
   font-family:'Montserrat',sans-serif; font-size:20px; font-weight:900;
-  color:#111; margin-bottom:6px;
+  color:#fff; margin-bottom:6px;
 }
-.plan-old { font-size:13px; color:#bbb; text-decoration:line-through; margin-bottom:2px; }
-.plan-hoje { font-size:11px; color:#888; margin-bottom:2px; }
+.plan-old { font-size:13px; color:#999; text-decoration:line-through; margin-bottom:2px; }
+.plan-hoje { font-size:11px; color:#aaa; margin-bottom:2px; }
 .plan-price {
   font-family:'Montserrat',sans-serif; font-size:48px; font-weight:900;
   color:#FF6B00; line-height:1;
+  text-shadow: 0 0 20px rgba(255,107,0,0.3);
 }
 .plan-price sup { font-size:22px; }
 .plan-price span { font-size:24px; }
-.plan-parcel { font-size:13px; color:#666; margin:4px 0 8px; }
+.plan-parcel { font-size:13px; color:#bbb; margin:4px 0 8px; }
 .plan-social {
-  display:inline-block; background:#f0fdf4; color:#16803a;
+  display:inline-block; background:rgba(22,128,58,0.15);
+  border:1px solid rgba(22,128,58,0.3);
+  color:#4ade80;
   font-size:12px; font-weight:700; border-radius:8px;
   padding:6px 12px; margin-bottom:16px;
 }
+.plan-social .social-proof span { color:#4ade80; }
+
 .social-proof {
   display: flex;
   align-items: center;
@@ -383,31 +354,76 @@ body {
   justify-content: center;
   border: 2px solid #fff;
 }
+
+.plan-img {
+  margin: 10px auto 0;
+  text-align: center;
+}
+.plan-img img {
+  width: 100%;
+  max-width: 260px;
+  transform: scale(1.08);
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.4));
+}
+.plan-price-box {
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+.pp-badge {
+  position:absolute; top:-14px; left:50%; transform:translateX(-50%);
+  background:linear-gradient(135deg,#FF6B00,#e05500); color:#fff;
+  font-family:'Montserrat',sans-serif; font-size:11px; font-weight:900;
+  padding:5px 20px; border-radius:50px; white-space:nowrap; letter-spacing:0.3px;
+}
 .plan-feats { list-style:none; text-align:left; margin-bottom:18px; }
 .plan-feats li {
-  font-size:13.5px; color:#333; padding:7px 0;
+  font-size:13.5px; color:#e0e0e0; padding:7px 0;
   display:flex; gap:8px; align-items:center;
-  border-bottom:1px solid #f5f5f5;
+  border-bottom:1px solid rgba(255,255,255,0.06);
 }
-.plan-feats li::before { content:'✓'; color:#16803a; font-weight:900; flex-shrink:0; font-size:14px; }
-.plan-cta-sub { font-size:12px; color:#bbb; margin-bottom:8px; }
+.plan-feats li::before { content:'✓'; color:#4ade80; font-weight:900; flex-shrink:0; font-size:14px; }
+.plan-cta-sub { font-size:12px; color:#999; margin-bottom:8px; }
 
 .pay-row {
   display:flex; justify-content:center; gap:8px; flex-wrap:wrap; margin-top:14px;
 }
 .pay-chip {
-  background:#f4f4f4; color:#555; border-radius:6px;
+  background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.1);
+  color:#ccc; border-radius:6px;
   padding:5px 10px; font-size:11px; font-weight:700;
   display:flex; align-items:center; gap:4px;
 }
 
-.urgencia-last {
-  background:#fff8f2; border:1.5px dashed #FF6B00; border-radius:12px;
-  padding:12px 14px; text-align:center; margin-top:14px;
+/* Botão pulsante */
+.btn-cta.pulse {
+  animation: pulseGlow 2s ease-in-out infinite;
 }
-.urgencia-last .ul-title { font-size:13px; font-weight:800; color:#FF6B00; margin-bottom:2px; }
-.urgencia-last .ul-sub { font-size:12px; color:#888; }
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 6px 20px rgba(22,128,58,0.38); transform: scale(1); }
+  50% { box-shadow: 0 8px 30px rgba(22,128,58,0.55), 0 0 20px rgba(22,128,58,0.3); transform: scale(1.02); }
+}
 
+.urgencia-last {
+  background: #E53935; /* vermelho forte */
+  border: 1.5px solid #B71C1C; /* borda um pouco mais escura */
+  border-radius:12px;
+  padding:14px 16px;
+  text-align:center;
+  margin-top:14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* destaque */
+}
+
+.urgencia-last .ul-title {
+  font-size:14px;
+  font-weight:900;
+  color:#fff; /* título branco para contraste */
+  margin-bottom:4px;
+}
+
+.urgencia-last .ul-sub {
+  font-size:13px;
+  color:#fff; /* subtítulo branco */
+}
 /* ========== GARANTIA ========== */
 .garantia-box {
   background:linear-gradient(135deg,#f0fdf4,#dcfce7);
@@ -547,7 +563,7 @@ footer a { color:#FF6B00; text-decoration:none; }
   opacity: 0.9;
 }
 .highlight-underline {
-  color: #fff !important; /* força branco */
+  color: #fff !important;
   text-decoration: underline;
   text-decoration-color: #FF6B00;
   text-decoration-thickness: 3px;
@@ -771,7 +787,7 @@ footer a { color:#FF6B00; text-decoration:none; }
     <div class="arrows">↓ ↓ ↓</div>
   </div>
 
-  <!-- PREMIUM -->
+  <!-- PREMIUM — FUNDO ESCURO -->
   <div class="plan-premium">
     <div class="pp-badge">MAIS POPULAR</div>
 
@@ -802,7 +818,7 @@ footer a { color:#FF6B00; text-decoration:none; }
     </div>
 
     <ul class="plan-feats">
-      <li>+350 Dinâmicas e Atividades de Ed. Física</li>
+      <li>+120 Dinâmicas e Atividades de Ed. Física</li>
       <li>Acesso digital e Vitalício</li>
       <li>Suporte prioritário</li>
       <li>Garantia de 30 dias</li>
@@ -817,7 +833,7 @@ footer a { color:#FF6B00; text-decoration:none; }
 
     <div class="plan-cta-sub">Clique no botão abaixo e garanta já o seu! ↴</div>
 
-    <a href="#" class="btn-cta green">SIM, QUERO O PLANO COMPLETO</a>
+    <a href="#" class="btn-cta green pulse">SIM, QUERO O PLANO COMPLETO</a>
 
     <div class="pay-row">
       <span class="pay-chip">Satisfação Garantida</span>
