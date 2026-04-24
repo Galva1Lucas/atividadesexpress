@@ -176,7 +176,7 @@ button.btn-cta { border: none; width: 100%; display: block; margin: 0 auto; }
   pointer-events: none;
   user-select: none;
 }
-/* depoimentos um pouco maiores */
+/* depoimentos um pouco maiores (desktop) */
 .car-track.dep img { height: 340px; }
 
 /* O QUE VAI RECEBER */
@@ -386,6 +386,31 @@ button.btn-cta { border: none; width: 100%; display: block; margin: 0 auto; }
 /* FOOTER */
 footer { background: #111; color: #aaa; text-align: center; padding: 30px 22px; font-size: 13px; line-height: 1.9; }
 footer a { color: #FF6B00; text-decoration: none; }
+
+/* =========================
+   AJUSTE MOBILE (PEDIDO)
+   ========================= */
+@media (max-width: 480px) {
+  /* Carrossel "O que vai receber" (car-track normal) */
+  .car-track img {
+    height: 380px !important; /* aumentei um pouco */
+  }
+
+  /* Carrossel de depoimentos */
+  .car-track.dep img {
+    height: 600px !important; /* aumentei bem para leitura */
+  }
+
+  /* Dá mais espaço vertical para as imagens maiores */
+  .car-wrap {
+    margin: 22px 0 30px !important;
+  }
+
+  /* Opcional: aumenta um pouco a área da seção para o conteúdo não ficar apertado */
+  .sec {
+    padding: 44px 16px;
+  }
+}
 </style>
 </head>
 <body>
@@ -875,3 +900,5 @@ setupCarousel(document.getElementById('car2'), 0.5);
 </script>
 </body>
 </html>
+
+
