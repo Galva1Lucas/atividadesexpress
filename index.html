@@ -15,8 +15,20 @@
 </script>
 <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
 
+<!-- WISTIA VIDEO PLAYER -->
+<script src="https://fast.wistia.com/player.js" async></script>
+<script src="https://fast.wistia.com/embed/ahik5ek8xc.js" async type="module"></script>
+
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
+/* WISTIA PLAYER STYLE */
+wistia-player[media-id='ahik5ek8xc']:not(:defined) {
+  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ahik5ek8xc/swatch');
+  display: block;
+  filter: blur(5px);
+  padding-top: 177.78%;
+}
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -44,11 +56,17 @@ body {
 .hero {
   background:
     linear-gradient(160deg, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.76) 100%),
-    url('img/headfundo.jpg') center center / cover no-repeat;
+    url('img/headfundo.webp') center center / cover no-repeat;
   text-align: center;
   padding: 32px 20px 28px;
 }
 .hero-mockup { margin: 14px auto 16px; }
+.hero-mockup wistia-player {
+  width: 100%;
+  max-width: 340px;
+  display: block;
+  margin: 0 auto;
+}
 .hero-mockup img {
   width: 100%;
   max-width: 340px;
@@ -417,7 +435,7 @@ footer a { color: #FF6B00; text-decoration: none; }
 
 <!-- TOP BAR -->
 <div class="topbar">
-  Oferta especial para <span id="cidade-usuario">sua região</span>! • Somente até <span id="data-hoje"></span>
+ +2.000 professores já usam • OFERTA EXPIRA EM:  <span id="data-hoje"></span>
 </div>
 
 <!-- HERO -->
@@ -427,7 +445,7 @@ footer a { color: #FF6B00; text-decoration: none; }
     <span>Educação Física Infantil</span>
   </h1>
   <div class="hero-mockup">
-    <img src="img/head.png" alt="Mockup do material">
+    <wistia-player media-id="ahik5ek8xc" aspect="0.5625"></wistia-player>
   </div>
   <div class="mini-social-proof">
     <div class="avatars">
@@ -454,12 +472,12 @@ footer a { color: #FF6B00; text-decoration: none; }
 
   <div class="car-wrap">
     <div class="car-track" id="car1">
-      <img src="img/receber1.png" alt="Atividade 1">
-      <img src="img/receber2.jpg" alt="Atividade 2">
-      <img src="img/receber3.jpg" alt="Atividade 3">
-      <img src="img/receber4.png" alt="Atividade 4">
-      <img src="img/receber5.png" alt="Atividade 5">
-      <img src="img/receber6.png" alt="Atividade 6">
+      <img src="img/receber1.webp" alt="Atividade 1">
+      <img src="img/receber2.webp" alt="Atividade 2">
+      <img src="img/receber3.webp" alt="Atividade 3">
+      <img src="img/receber4.webp" alt="Atividade 4">
+      <img src="img/receber5.webp" alt="Atividade 5">
+      <img src="img/receber6.webp" alt="Atividade 6">
     </div>
   </div>
 
@@ -537,21 +555,21 @@ footer a { color: #FF6B00; text-decoration: none; }
   </div>
 
   <div class="bonus-card">
-    <div class="book-mock"><img src="img/bonus1.png" alt="Bônus 1"></div>
+    <div class="book-mock"><img src="img/bonus1.webp" alt="Bônus 1"></div>
     <h3>🏆 Kit "Juntos Somos Mais Fortes"</h3>
     <div class="val"><s>R$57</s> <strong>GRÁTIS</strong></div>
     <p class="desc">50 Jogos Cooperativos prontos para aplicar. Cada jogo vem com objetivo, materiais e passo a passo completo.</p>
   </div>
 
   <div class="bonus-card">
-    <div class="book-mock"><img src="img/bonus2.png" alt="Bônus 2"></div>
+    <div class="book-mock"><img src="img/bonus2.webp" alt="Bônus 2"></div>
     <h3>🧠 Laboratório do Movimento</h3>
     <div class="val"><s>R$47</s> <strong>GRÁTIS</strong></div>
     <p class="desc">30 Atividades de Psicomotricidade Criativa para desenvolver equilíbrio, coordenação e concentração nas crianças de 4 a 12 anos.</p>
   </div>
 
   <div class="bonus-card">
-    <div class="book-mock"><img src="img/bonus3.png" alt="Bônus 3"></div>
+    <div class="book-mock"><img src="img/bonus3.webp" alt="Bônus 3"></div>
     <h3>📖 Apostila Completa de Psicomotricidade Infantil</h3>
     <div class="val"><s>R$47</s> <strong>GRÁTIS</strong></div>
     <p class="desc">Guia prático com técnicas de movimento, equilíbrio e coordenação. Ideal para consulta rápida antes das aulas.</p>
@@ -559,7 +577,7 @@ footer a { color: #FF6B00; text-decoration: none; }
 
   <div class="bonus-card">
     <span class="bonus-new-badge">⭐ NOVO</span>
-    <div class="book-mock"><img src="img/bonus4.png" alt="Bônus 4"></div>
+    <div class="book-mock"><img src="img/bonus4 (1).webp" alt="Bônus 4"></div>
     <h3>Cronograma de 4 Semanas Pronto para Usar</h3>
     <div class="val"><s>R$37</s> <strong>GRÁTIS</strong></div>
     <p class="desc">Plano de aulas já montado. Chega na segunda-feira e já sabe exatamente o que aplicar. Sem improvisos, sem estresse.</p>
@@ -567,7 +585,7 @@ footer a { color: #FF6B00; text-decoration: none; }
 
   <div class="bonus-card">
     <span class="bonus-new-badge">⭐ NOVO</span>
-    <div class="book-mock"><img src="img/bonus5.png" alt="Bônus 5"></div>
+    <div class="book-mock"><img src="img/bonus5 (1).webp" alt="Bônus 5"></div>
     <h3>Kit "Dia de Chuva Resolvido"</h3>
     <div class="val"><s>R$47</s> <strong>GRÁTIS</strong></div>
     <p class="desc">30 atividades para aplicar dentro da sala de aula ou quadra coberta. Sem precisar de muito espaço, sem bagunça.</p>
@@ -575,7 +593,7 @@ footer a { color: #FF6B00; text-decoration: none; }
 
   <div class="bonus-card">
     <span class="bonus-new-badge">⭐ NOVO</span>
-    <div class="book-mock"><img src="img/bonus6.png" alt="Bônus 6"></div>
+    <div class="book-mock"><img src="img/bonus6 (1).webp" alt="Bônus 6"></div>
     <h3>Atualizações Vitalícias do Material</h3>
     <div class="val"><s>R$47</s> <strong>GRÁTIS</strong></div>
     <p class="desc">Sempre que novos conteúdos forem adicionados, você recebe automaticamente, sem pagar nada a mais. Para sempre.</p>
@@ -583,7 +601,7 @@ footer a { color: #FF6B00; text-decoration: none; }
 
   <div class="bonus-card">
     <span class="bonus-new-badge">⭐ NOVO</span>
-    <div class="book-mock"><img src="img/bonus7.png" alt="Bônus 7"></div>
+    <div class="book-mock"><img src="img/bonus7.webp" alt="Bônus 7"></div>
     <h3>🎓 Certificado de Participação</h3>
     <div class="val"><s>R$37</s> <strong>GRÁTIS</strong></div>
     <p class="desc">Certificado digital de conclusão para valorizar o seu currículo. Válido para horas complementares.</p>
@@ -593,7 +611,7 @@ footer a { color: #FF6B00; text-decoration: none; }
     <div class="bt-line1">Você economiza mais de</div>
     <div class="bt-line2">R$319 EM BÔNUS GRÁTIS!</div>
     <div class="bt-line3">Tudo isso incluso no Plano Completo por apenas R$27,90</div>
-    <a href="#planos" class="btn-cta green pulse" style="font-size:19px;">QUERO ECONOMIZAR +R$300 🔥</a>
+    <a href="#planos" class="btn-cta green pulse" style="font-size:19px;">QUERO APROVEITAR 🔥</a>
   </div>
 </section>
 <div class="divider"></div>
@@ -606,7 +624,7 @@ footer a { color: #FF6B00; text-decoration: none; }
     <div class="pp-badge">⭐ MAIS POPULAR</div>
     <h2>Plano Completo</h2>
     <div class="plan-img">
-      <img src="img/plano27.png" alt="Plano Completo">
+      <img src="img/plano27.webp" alt="Plano Completo">
     </div>
     <div class="plan-price-box">
       <div class="plan-old">De R$ 97,90</div>
@@ -677,10 +695,10 @@ footer a { color: #FF6B00; text-decoration: none; }
 <section class="sec">
   <h2 class="sec-title">RISCO ZERO! SUA SATISFAÇÃO OU SEU <span>DINHEIRO DE VOLTA</span></h2>
   <div class="garantia-box">
-    <img src="img/30dias.png" alt="Garantia 30 dias" class="garantia-img">
+    <img src="img/30dias.webp" alt="Garantia 30 dias" class="garantia-img">
     <h2>30 Dias de Garantia</h2>
     <p>Você tem 30 dias para testar tudo. Se não gostar, devolvemos 100% do seu dinheiro sem perguntas.</p>
-    <img src="img/bannersite.png" alt="Compra segura" class="garantia-selos">
+    <img src="img/bannersite.webp" alt="Compra segura" class="garantia-selos">
   </div>
 </section>
 
@@ -695,11 +713,11 @@ footer a { color: #FF6B00; text-decoration: none; }
 
   <div class="car-wrap">
     <div class="car-track dep" id="car2">
-      <img src="img/depoimento1.png" alt="Depoimento 1">
-      <img src="img/depoimento2.png" alt="Depoimento 2">
-      <img src="img/depoimento3.jpeg" alt="Depoimento 3">
-      <img src="img/depoimento4.png" alt="Depoimento 4">
-      <img src="img/depoimento5.png" alt="Depoimento 5">
+      <img src="img/depoimento1.webp" alt="Depoimento 1">
+      <img src="img/depoimento2.webp" alt="Depoimento 2">
+      <img src="img/depoimento3.webp" alt="Depoimento 3">
+      <img src="img/depoimento4.webp" alt="Depoimento 4">
+      <img src="img/depoimento5.webp" alt="Depoimento 5">
     </div>
   </div>
 </section>
@@ -707,7 +725,7 @@ footer a { color: #FF6B00; text-decoration: none; }
 <!-- AUTORA -->
 <section class="sec autora">
   <h2 class="sec-title">Sobre a <span>Autora</span></h2>
-  <div class="autora-av"><img src="img/autora.png" alt="Patricia Ribeiro"></div>
+  <div class="autora-av"><img src="img/autora.webp" alt="Patricia Ribeiro"></div>
   <h3>Patricia Ribeiro</h3>
   <div class="cargo">Educadora Especialista em Educação Física Infantil</div>
   <div class="stats-row">
@@ -809,13 +827,6 @@ var amanha = new Date(hoje);
 amanha.setDate(amanha.getDate() + 1);
 var elProx = document.getElementById('prox-dia');
 if (elProx) elProx.textContent = formatarData(amanha);
-
-fetch('https://ipapi.co/json/')
-  .then(function(r){ return r.json(); })
-  .then(function(d){
-    var el = document.getElementById('cidade-usuario');
-    if (el && d.city) el.textContent = d.city;
-  }).catch(function(){});
 
 // POPUP
 function abrirDownsell(){
